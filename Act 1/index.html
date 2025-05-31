@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="styles.css">
+    <title>Simulador de Pedidos - Cafetería</title>
+</head>
+<body>
+    <h1>Simulador de Pedidos - Cafetería ☕</h1>
+
+    <form id="formularioPedido">
+        <input type="text" id="cliente" placeholder="Nombre del Cliente" required />
+        <select id="bebida" required>
+        <option value="">Selecciona una bebida</option>
+        <option value="Café Americano">Café Americano</option>
+        <option value="Café Latte">Café Latte</option>
+        <option value="Capuchino">Capuchino</option>
+        <option value="Té Chai">Té Chai</option>
+        </select>
+        <button type="submit">Agregar Pedido</button>
+    </form>
+
+    <div class="contenedor">
+        <div class="columna">
+        <h2>Pedidos en Proceso</h2>
+        <div id="listaEnProceso"></div>
+        </div>
+        <div class="columna">
+        <h2>Pedidos Completados</h2>
+        <div id="listaCompletados"></div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>

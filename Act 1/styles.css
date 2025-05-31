@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f6f6f6;
+    padding: 20px;
+}
+
+h1 {
+    color: #444;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input, select, button {
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.pedido {
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+}
+
+.en-proceso {
+    border-left: 6px solid orange;
+}
+
+.completado {
+    border-left: 6px solid green;
+    background-color: #e6ffe6;
+}
+
+.contenedor {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.columna {
+    flex: 1 1 300px;
+    max-width: 100%;
+}
+
+.columna h2 {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+    color: #333;
+}
