@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Registro de Evento</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Registro para Evento</h1>
+
+    <form id="registroForm" novalidate>
+        <label for="nombre">Nombre Completo:</label><br />
+        <input type="text" id="nombre" name="nombre" required /><br />
+
+        <label for="correo">Correo Electrónico:</label><br />
+        <input type="email" id="correo" name="correo" required /><br />
+
+        <label for="telefono">Teléfono:</label><br />
+        <input type="tel" id="telefono" name="telefono" required /><br />
+
+        <fieldset>
+        <legend>Intereses:</legend>
+        <label><input type="checkbox" name="intereses" value="Tecnología" /> Tecnología</label><br />
+        <label><input type="checkbox" name="intereses" value="Marketing" /> Marketing</label><br />
+        <label><input type="checkbox" name="intereses" value="Ventas" /> Ventas</label><br />
+        <label><input type="checkbox" name="intereses" value="Diseño" /> Diseño</label>
+        </fieldset>
+
+        <fieldset>
+        <legend>Horario Preferido:</legend>
+        <label><input type="radio" name="horario" value="Mañana" required /> Mañana</label><br />
+        <label><input type="radio" name="horario" value="Tarde" /> Tarde</label><br />
+        <label><input type="radio" name="horario" value="Noche" /> Noche</label>
+        </fieldset>
+
+        <label for="fechaEvento">Fecha del Evento:</label><br />
+        <input type="date" id="fechaEvento" name="fechaEvento" required /><br />
+
+        <label for="archivo">Documento de Identificación (opcional):</label><br />
+        <input type="file" id="archivo" name="archivo" accept=".pdf,.jpg,.jpeg,.png" /><br /><br />
+
+        <button type="submit">Registrar</button>
+    </form>
+
+    <div id="mensajes"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
